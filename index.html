@@ -48,14 +48,21 @@
       flex-wrap: wrap;
       gap: 20px;
     }
-
+    
+    .video-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 360px;
+    }
+    
     .video-box {
       width: 100%;
       max-width: 360px;
       aspect-ratio: 9 / 16;
       background-color: #ccc;
     }
-
+   
     @media (max-width: 768px) {
       .video-container {
         flex-direction: column;
@@ -79,32 +86,47 @@
     </div>
   </section>
 
-  <!-- Section 3: Others -->
- <section class="others">
+ <!-- Section 3: Others -->
+<section class="others">
   <h2>Others</h2>
-
-  <h3>วิดีโอแนวตลก</h3>
+  
   <div class="video-container">
-    <iframe style="max-width: 480px; aspect-ratio: 9 / 16;" 
+  <div class="video-item">
+    <span>วิดีโอแนวตลก</span>
+    <iframe class="video-box" 
       src="https://www.youtube.com/embed/33UE8NOygi8" 
-      title="สมัครงานตามซีนหนังดัง" 
+      title="วิดีโอแนวตลก"
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       referrerpolicy="strict-origin-when-cross-origin" 
       allowfullscreen>
     </iframe>
-
-    <div class="video-box">
-      <p>2</p>
-      [Video 2]
-    </div>
-
-    <div class="video-box">
-      <p>3</p>
-      [Video 3]
-    </div>
   </div>
-</section>
 
+  <div class="video-item">
+    <span>วิดีโอโปรโมชั่นสินค้า</span>
+     <iframe class="video-box" 
+       src="https://www.youtube.com/embed/BT1sB_3u6E4" 
+       title="วิดีโอโปรโมชั่นสินค้า" 
+       frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin"
+       allowfullscreen>
+    </iframe>
+
+  <div class="video-item">
+    <span>วิดีโอเล่นเกมสนุก ๆ</span>
+   <iframe class="video-box" 
+     src="https://www.youtube.com/embed/85EttGn1pVU" 
+     title="วิดีโอเล่นเกมสนุก ๆ" 
+     frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin"
+       allowfullscreen>
+    </iframe>
+</div>
+
+</section>
+  
 </body>
 </html>
