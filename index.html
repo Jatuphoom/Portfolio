@@ -1,193 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-  <style>
+<style>
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
-      font-family: "Times New Roman", serif;
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-      background-color: #131313;
-      color: white;
+        margin: 0;
+        font-family: "Times New Roman", serif;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        background-color: #131313;
+        color: white;
     }
+
     section {
-  min-height: 100vh;
-  padding: 10px 20px;
-  text-align: center;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+        min-height: 100vh;
+        padding: 10px 20px;
+        text-align: center;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .cover {
-      background-color: #131313;
-      color: white;
-      font-size: 160px;
-      font-weight: bold;
+        background-color: #131313;
+        color: white;
+        font-size: 160px;
+        font-weight: bold;
     }
-    
+
     .cover-subtitle {
-      font-size: 30px;
-      font-family: 'Kanit', sans-serif;
-      color: White;
-      margin-top: 20px;
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif;
+        color: White;
+        margin-top: 20px;
     }
 
     .cover-image {
-      margin-top: 30px;
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto;
-    }
-    .showreels, .others {
-      background-color: #131313;
+        margin-top: 30px;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .showreels h2, .others h2 {
-      font-size: 80px;
-      margin-bottom: 40px;
+    .showreels,
+    .others {
+        background-color: #131313;
+    }
+
+    .showreels h2,
+    .others h2 {
+        font-size: 80px;
+        margin-bottom: 40px;
     }
 
     .video-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
-    
+
     .video-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 360px;
-      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 360px;
     }
-    
+
     .video-item span {
         color: white;
         margin-bottom: 10px;
         font-size: 24px;
         font-family: 'Kanit', sans-serif;
-        }
-        
+    }
+
     .video-box {
-      width: 100%;
-      max-width: 360px;
-      aspect-ratio: 9 / 16;
-      background-color: #ccc;
+        width: 100%;
+        max-width: 360px;
+        aspect-ratio: 9 / 16;
+        /* แนวตั้ง */
+        background-color: #ccc;
     }
-   
+
+    .video-box-horizontal {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-color: #ccc;
+    }
+
+    .section4 .video-item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .section4 .video-box-horizontal {
+        width: 100%;
+        max-width: 650px;
+        aspect-ratio: 16 / 9;
+        background-color: #ccc;
+    }
+
+    .section4 {
+        min-height: auto;
+        padding-top: 20px;
+    }
+
     @media (max-width: 768px) {
-      .video-container {
-        flex-direction: column;
-        align-items: center;
-      }
+        .video-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section4 .video-box-horizontal {
+            max-width: 100%;
+        }
     }
-  </style>
-</head> 
+</style>
+</head>
+
 <body>
 
-  <!-- Section 1: Cover -->
-  <section class="cover">
-    Portfolio
-    <div class="cover-subtitle">Jatuphoom Janbua</div>
-    <img src="9987.jpg" alt="My cover image" class="cover-image">
-  </section>
+    <!-- Section 1: Cover -->
+    <section class="cover">
+        Portfolio
+        <div class="cover-subtitle">Jatuphoom Janbua</div>
+        <img src="9987.jpg" alt="My cover image" class="cover-image">
+    </section>
 
-<!-- Section 2: Others -->
-<section class="others">
-  <h2>Internship Work Accomplishments</h2>
-  <div class="video-container">
-    <div class="video-item">
-      <span>วิดีโอแนวตลก</span>
-      <iframe class="video-box" 
-        src="https://www.youtube.com/embed/33UE8NOygi8" 
-        title="วิดีโอแนวตลก"
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="video-item">
-      <span>วิดีโอโปรโมชั่นสินค้า</span>
-      <iframe class="video-box" 
-        src="https://www.youtube.com/embed/BT1sB_3u6E4" 
-        title="วิดีโอโปรโมชั่นสินค้า" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="video-item">
-      <span>วิดีโอเล่นเกมสนุก ๆ</span>
-      <iframe class="video-box" 
-        src="https://www.youtube.com/embed/85EttGn1pVU" 
-        title="วิดีโอเล่นเกมสนุก ๆ" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
+    <!-- Section 2 -->
+    <section class="others">
+        <h2>Internship Work Accomplishments</h2>
+        <div class="video-container">
+            <div class="video-item">
+                <span>วิดีโอแนวตลก</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/33UE8NOygi8" title="วิดีโอแนวตลก" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <span>วิดีโอโปรโมชั่นสินค้า</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/BT1sB_3u6E4" title="วิดีโอโปรโมชั่นสินค้า" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <span>วิดีโอเล่นเกมสนุก ๆ</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/85EttGn1pVU" title="วิดีโอเล่นเกมสนุก ๆ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
-<!-- Section 3: Others Modified -->
-<section class="others">
-  <div class="video-container">
-    <div class="video-item">
-      <span>วิดีโอแนวน่ารัก-กึ่งทางการ</span>
-      <iframe class="video-box"
-        src="https://www.youtube.com/embed/hfBhTy7toS0"
-        title="วิดีโอแนวน่ารัก-กึ่งทางการ"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <!-- Section 3 -->
+    <section class="others">
+        <div class="video-container">
+            <div class="video-item">
+                <span>วิดีโอแนวน่ารัก-กึ่งทางการ</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/hfBhTy7toS0" title="วิดีโอแนวน่ารัก-กึ่งทางการ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
-    <div class="video-item">
-      <span>วิดีโอ Stock footage</span>
-      <iframe class="video-box"
-        src="https://www.youtube.com/embed/-l2F1xdkoV0"
-        title="วิดีโอ Stock footage"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
+            <div class="video-item">
+                <span>วิดีโอ Stock footage</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/-l2F1xdkoV0" title="วิดีโอ Stock footage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
-    <div class="video-item">
-      <span>วิดีโอที่มีการใช้ Green screen</span>
-      <iframe class="video-box"
-        src="https://www.youtube.com/embed/SU_MKpYec4I"
-        title="วิดีโอที่มีการใช้ Green screen"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
-  
-  
+            <div class="video-item">
+                <span>วิดีโอที่มีการใช้ Green screen</span>
+                <iframe class="video-box" src="https://www.youtube.com/embed/SU_MKpYec4I" title="วิดีโอที่มีการใช้ Green screen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="others section4">
+        <div class="video-container">
+            <div class="video-item">
+                <span>วิดีโอพิเศษ</span>
+                <iframe class="video-box-horizontal" src="https://www.youtube.com/embed/3ZfLbbA2pZg" title="วิดีโอพิเศษ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
