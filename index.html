@@ -6,7 +6,7 @@
     body {
         margin: 0;
         font-family: "Times New Roman", serif;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
         overflow-y: scroll;
         background-color: #131313;
         color: white;
@@ -25,7 +25,7 @@
     .cover {
         background-color: #131313;
         color: white;
-        font-size: 140px;
+        font-size: 100px;
         font-weight: bold;
     }
 
@@ -76,6 +76,14 @@
         margin-bottom: 10px;
         font-size: 24px;
         font-family: 'Kanit', sans-serif;
+    }
+
+    .video-item iframe {
+        transition: transform 0.3s ease;
+    }
+
+    .video-item iframe:hover {
+        transform: scale(1.05);
     }
 
     .video-box {
@@ -129,7 +137,7 @@
         Portfolio
         <div class="cover-subtitle">Jatuphoom Janbua</div>
         <div class="cover-subtitle">Video Editor</div>
-        <img src="9987.jpg" alt="My cover image" class="cover-image">
+        <img src="unnamed copy.png" alt="My cover image" class="cover-image">
     </section>
 
     <!-- Section 2 -->
@@ -138,15 +146,15 @@
         <div class="video-container">
             <div class="video-item">
                 <span>1</span>
-                <iframe class="video-box" src="https://www.tiktok.com/@somsai.since2009/video/7589237660942748935?is_from_webapp=1&sender_device=pc&web_id=7529439165395994130" title="1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-box" src="https://youtube.com/shorts/-pGQUyKpN9A" title="1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-item">
                 <span>2</span>
-                <iframe class="video-box" src="https://www.tiktok.com/@somsai.since2009/video/7578731857471180040?is_from_webapp=1&sender_device=pc&web_id=7529439165395994130 title="2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-box" src="https://youtube.com/shorts/HlvGzc543hU" title="2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-item">
                 <span>3</span>
-                <iframe class="video-box" src="https://www.tiktok.com/@panxsomsai2009/video/7561091003256524050?is_from_webapp=1&sender_device=pc&web_id=7529439165395994130" title="3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-box" src="https://youtube.com/shorts/-w-exfS4ifM" title="3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
